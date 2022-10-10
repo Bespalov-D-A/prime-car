@@ -1,0 +1,69 @@
+.benefits-card {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  padding: 191px 45px 0 45px;
+  margin-right: 85px;
+  border-radius: 16px;
+  flex: 1 1 0;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.benefits-card__title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.benefits-card--map {
+  background: $card-green;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 261px;
+    height: 261px;
+    background-image: url('./../img/icons/map.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.benefits-card--date {
+  background: $card-red;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    width: 261px;
+    height: 261px;
+    margin: 0 auto;
+    background-image: url('./../img/icons/date.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.benefits-card--key {
+  background: $card-blue;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    width: 261px;
+    height: 261px;
+    margin: 0 auto;
+    background-image: url('./../img/icons/key.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}

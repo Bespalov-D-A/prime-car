@@ -1,0 +1,52 @@
+.benefits {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: $page;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 90px;
+  background: $dark;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    width: 302px;
+    height: 298px;
+    position: absolute;
+    display: block;
+    top: -100px;
+    left: -120px;
+    background-image: url('./../img/decor/green-line.svg'),
+    url('./../img/decor/blue-line.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom, right 40px bottom 40px;
+  }
+  &:after {
+    content: '';
+    width: 302px;
+    height: 298px;
+    position: absolute;
+    display: block;
+    bottom: -100px;
+    right: -120px;
+    transform: rotate(180deg);
+    background-image: url('./../img/decor/green-line.svg'),
+    url('./../img/decor/blue-line.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom, right 40px bottom 40px;
+  }
+
+}
+
+.benefits__title {
+  text-align: center;
+}
+
+.benefits__cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  padding: 120px 0 114px 0;
+}

@@ -36,8 +36,11 @@ exports.js = js
 exports.img = img
 exports.font = font
 
-const build = series(clear, parallel(html, scss, js, img, font))
-const dev = series(build, parallel(watcher, server))
+const build = series(
+  clear,
+  parallel(html, scss, js, img, font)
+)
+const dev = series(build, parallel(watcher))
 
 // Build
 exports.default = settings.isProduction ? build : dev
