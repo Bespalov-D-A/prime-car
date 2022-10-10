@@ -1,0 +1,15 @@
+.footer-nav-block__item {
+  &:first-child {
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
+
+.footer-nav-block__item--link {
+  font-size: 17px;
+  color: $gray;
+  &:link,
+  &:visited {
+    color: $gray;
+  }
+}
