@@ -26,7 +26,7 @@ const scss = () => {
     .pipe(sass())
     .pipe(cssimport())
     .pipe(webpCss())
-    .pipe(shorthand())
+//    .pipe(shorthand())
     .pipe(groupmedia())
     .pipe(autoprefixer())
     .pipe(size({ title: 'main.css' }))

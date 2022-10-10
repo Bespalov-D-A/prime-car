@@ -19,7 +19,7 @@
     left: -120px;
     background-image: url('./../img/decor/green-line.svg'),
     url('./../img/decor/blue-line.svg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position: right bottom, right 40px bottom 40px;
   }
   &:after {

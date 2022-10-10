@@ -1,0 +1,58 @@
+.amazed {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  overflow: hidden;
+  max-width: $page;
+  margin: 0 auto;
+  padding: 100px;
+  background: $dark;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 259px;
+    height: 417px;
+    background-image: url('./../img/decor/star-green.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 303px;
+    height: 331px;
+    background-image: url('./../img/decor/star-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 300;
+  }
+}
+
+.amazed__img {
+  padding-top: 50px;
+}
+
+.amazed__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+}
+
+.amazed__info--desc {
+  max-width: 420px;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.amazed__img {
+  position: relative;
+  z-index: 200;
+}

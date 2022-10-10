@@ -1,0 +1,27 @@
+.buy {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+position: relative;
+  max-width: $page;
+  margin: 0 auto;
+  padding: 100px 100px 540px 100px;
+  overflow: hidden;
+}
+
+.buy__title {
+}
+
+.buy__desc {
+  padding-bottom: 60px;
+}
+
+.buy__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 540px;
+  background: violet;
+  opacity: 0.3;
+}
