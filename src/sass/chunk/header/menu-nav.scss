@@ -1,0 +1,18 @@
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__btn {
+  align-self: center;
+  padding: 8px 32px;
+  @include btn-trans;
+}

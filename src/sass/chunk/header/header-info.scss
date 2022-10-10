@@ -1,0 +1,35 @@
+.header-info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  max-width: 800px;
+  text-align: right;
+}
+
+.header-info__title {
+}
+
+.header-info__desc {
+  max-width: 318px;
+  margin-bottom: 28px;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.header-info__btn {
+  position: relative;
+  padding: 12px 70px 12px 28px;
+  @include btn-trans;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 32px;
+    width: 28px;
+    height: 28px;
+    background-image: url('./../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

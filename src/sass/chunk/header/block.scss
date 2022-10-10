@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  max-width: $page;
+  height: 1020px;
+  margin: 0 auto;
+  padding: 200px 100px;
+  background-image: url('./../img/Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

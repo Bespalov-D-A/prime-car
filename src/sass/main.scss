@@ -1,10 +1,34 @@
 @import './mixins/index.scss';
+@import './base/index.scss';
 
-//Add your fonts with it
-//         mixin       name     Roboto-regular.woff
-//@include font-face('Roboto', 'Roboto-regular')
-//@include font-face('Roboto', 'Roboto-regular', 700, 'bold')
+@include font-face(
+  'SF_pro',
+  'SFPRODISPLAYBOLD',
+  700,
+  'bold'
+);
+@include font-face(
+  'SF_pro',
+  'SFPRODISPLAYSEMIBOLD',
+  600,
+  'semi-bold'
+);
+@include font-face(
+  'SF_pro',
+  'SFPRODISPLAYMEDIUM',
+  500,
+  'medium'
+);
+@include font-face('SF_pro', 'SFPRODISPLAYREGULAR');
+@include font-face('American Captain', 'American_Captain');
 
 body {
-  background: violet;
+  position: relative;
+  color: $white;
+
+  font-family: 'SF_pro', sans-serif;
+  font-size: 24px;
+  line-height: 1;
 }
+
+@import './chunk/header/index.scss';
