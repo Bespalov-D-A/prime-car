@@ -1,7 +1,7 @@
 .contact-int {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   padding: 116px 100px;
   z-index: 200;
@@ -11,33 +11,14 @@
   max-width: 660px;
 }
 
+.contact-int__info--title {
+    padding-top: 78px;
+    line-height: 76px;
+}
+
 .contact-int__info--desc {
-font-size: 26px;
+font-size: 30.08px;
 line-height: 50px;
 }
 
-.contact-int-form {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  max-width: 626px;
-}
 
-.contact-int-input {
-  min-width: 302px;
-  font-size: 20px;
-  margin-bottom: 50px;
-  color: $light;
-
-  background: transparent;
-  border: none;
-  border-bottom: $light 1px solid;
-
-  &:nth-child(5) {
-    min-width: 100%;
-  }
-
-  &::placeholder {
-    color: $light;
-  }
-}

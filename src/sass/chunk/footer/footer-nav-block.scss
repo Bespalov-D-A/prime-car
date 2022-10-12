@@ -1,8 +1,24 @@
+.footer-nav-block--contact {
+  .footer-nav-block__item {
+    &:first-child {
+      margin-bottom: 13px;
+    }
+  }
+}
+
 .footer-nav-block__item {
+  margin-bottom: 7px;
   &:first-child {
     font-size: 35px;
     font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: -0.7px;
   }
+}
+
+.footer-nav-block__item--flex {
+  display: flex;
+  max-width: 126px;
 }
 
 .footer-nav-block__item--link {
@@ -12,4 +28,11 @@
   &:visited {
     color: $gray;
   }
+}
+
+.footer-nav-block__item--flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 126px;
+  padding-top: 10px;
 }

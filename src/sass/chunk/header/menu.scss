@@ -5,7 +5,12 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 112px;
   max-width: $page;
   margin: 0 auto;
-  padding: 32px 100px;
+  padding: 0 100px;
+}
+
+.menu__title {
+  padding-top: 32px;
 }

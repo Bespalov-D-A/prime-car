@@ -5,13 +5,13 @@
   overflow: hidden;
   max-width: $page;
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 100px 96px;
   background: $dark;
 
   &:before {
     content: '';
     position: absolute;
-    top: 170px;
+    top: 152px;
     left: 0;
     width: 259px;
     height: 417px;
@@ -41,18 +41,20 @@
 .amazed__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   z-index: 200;
 }
 
 .amazed__info--desc {
   max-width: 420px;
+  padding-top: 56px;
   font-size: 32px;
   line-height: 38px;
 }
 
 .amazed__img {
   position: relative;
+  padding-top: 18px;
   z-index: 200;
 }

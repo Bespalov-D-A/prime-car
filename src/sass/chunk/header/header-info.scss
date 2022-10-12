@@ -3,6 +3,7 @@
   flex-flow: column wrap;
   align-items: flex-end;
   max-width: 800px;
+  padding-top: 6px;
   text-align: right;
 }
 
@@ -11,25 +12,31 @@
 
 .header-info__desc {
   max-width: 318px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-size: 32px;
-  line-height: 36px;
+  line-height: 38px;
+  font-weight: 600;
 }
 
 .header-info__btn {
   position: relative;
-  padding: 12px 70px 12px 28px;
+  padding: 12px 70px 12px 27px;
+  letter-spacing: 0.7px;
   @include btn-trans;
 
   &::after {
     content: '';
     position: absolute;
-    top: 8px;
-    right: 32px;
+    top: 10px;
+    right: 27px;
     width: 28px;
     height: 28px;
     background-image: url('./../img/icons/arrow.svg');
     background-repeat: no-repeat;
     background-position: center center;
   }
+}
+
+.header-info__btn--wrap {
+margin-right: -7px;
 }

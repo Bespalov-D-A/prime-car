@@ -1,6 +1,8 @@
 .menu-nav {
   display: flex;
   align-items: center;
+  letter-spacing: 0.7px;
+  padding-left: 26px;
 }
 
 .menu-nav__item {
@@ -14,5 +16,6 @@
 .menu__btn {
   align-self: center;
   padding: 8px 32px;
+  letter-spacing: 0.3px;
   @include btn-trans;
 }

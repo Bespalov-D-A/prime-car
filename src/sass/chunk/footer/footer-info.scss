@@ -1,7 +1,15 @@
 .footer-info {
   display: flex;
   justify-content: space-between;
-  padding-top: 70px;
+  padding-top: 68px;
 
   font-size: 15px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.footer-info__links--link {
+	&:first-child {
+	margin-right: 34px;
+	}
 }
