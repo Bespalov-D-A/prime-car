@@ -12,6 +12,7 @@ const scss = require('./tasks/scss.js')
 const js = require('./tasks/js.js')
 const img = require('./tasks/img.js')
 const font = require('./tasks/font.js')
+const video = require('./tasks/video.js')
 
 // Server
 const server = () => {
@@ -29,18 +30,20 @@ const watcher = () => {
   watch(path.js.watch, js).on('all', browserSync.reload)
   watch(path.img.watch, img).on('all', browserSync.reload)
   watch(path.font.watch, font).on('all', browserSync.reload)
+  watch(path.video.watch, video).on('all', browserSync.reload)
 }
 exports.html = html
 exports.scss = scss
 exports.js = js
 exports.img = img
 exports.font = font
+exports.video = video
 
 const build = series(
   clear,
-  parallel(html, scss, js, img, font)
+  parallel(html, scss, js, img, video, font)
 )
-const dev = series(build, parallel(watcher, server))
+const dev = series(build, parallel(watcher))
 
 // Build
 exports.default = settings.isProduction ? build : dev
