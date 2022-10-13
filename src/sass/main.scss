@@ -1,5 +1,6 @@
 @import './mixins/index.scss';
 @import './base/index.scss';
+@import './library/flikity.css';
 
 @include font-face(
   'SF_pro',
@@ -33,6 +34,13 @@ body {
   background: $dark-2;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+    transform: translateY(1px);
+  }
+}
+
 @import './chunk/header/index.scss';
 @import './chunk/about-us/index.scss';
 @import './chunk/benefits/index.scss';
@@ -40,3 +48,4 @@ body {
 @import './chunk/amazed/index.scss';
 @import './chunk/contact/index.scss';
 @import './chunk/footer/index.scss';
+@import './chunk/carousel/index.scss';
