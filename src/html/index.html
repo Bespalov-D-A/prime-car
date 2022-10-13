@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <title></title>
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
@@ -17,5 +19,9 @@
     </main>
     @@include("chunk/footer/index.html")
     <script src="js/main.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
   </body>
 </html>

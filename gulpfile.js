@@ -40,7 +40,7 @@ const build = series(
   clear,
   parallel(html, scss, js, img, font)
 )
-const dev = series(build, parallel(watcher))
+const dev = series(build, parallel(watcher, server))
 
 // Build
 exports.default = settings.isProduction ? build : dev
