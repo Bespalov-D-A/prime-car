@@ -1,6 +1,7 @@
 @import './mixins/index.scss';
 @import './base/index.scss';
 @import './library/flikity.css';
+@import './library/aos.scss';
 
 @include font-face(
   'SF_pro',
