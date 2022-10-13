@@ -1,4 +1,4 @@
-const test = require('./modules/test.js')
+const test = require('./modules/video.js')
 
 var elem = document.querySelector('.carousel');
 var elemTwo = document.querySelector('.carousel-two');
