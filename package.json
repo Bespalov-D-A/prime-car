@@ -43,7 +43,5 @@
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   },
-  "dependencies": {
-    "google-maps": "^4.3.3"
-  }
+  "dependencies": {}
 }
