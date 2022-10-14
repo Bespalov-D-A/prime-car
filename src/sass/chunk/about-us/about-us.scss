@@ -41,4 +41,8 @@
 
 .about-us__title {
   text-align: center;
+
+  @media (max-width: $mobile) {
+  font-size: 84px;
+  }
 }

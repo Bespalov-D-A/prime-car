@@ -1,5 +1,9 @@
 .footer {
-max-width: $page;
-margin: 0 auto;
-padding: 60px 100px;
+  max-width: $page;
+  margin: 0 auto;
+  padding: 60px 100px;
+
+  @media (max-width: $mobile) {
+    padding: 60px 45px;
+  }
 }

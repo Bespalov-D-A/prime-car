@@ -9,14 +9,14 @@
   max-width: $page;
   margin: 0 auto;
   padding: 0 100px;
-
+  z-index: 500;
   @media (max-width: $desktop) {
-  padding: 0 44px;
+    padding: 0 44px;
   }
 
   @media (max-width: $laptop) {
-  position: fixed;
-  padding: 0 112px 0 44px;
+    position: fixed;
+    padding: 0 112px 0 44px;
   }
 }
 

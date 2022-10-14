@@ -7,10 +7,18 @@ position: relative;
   margin: 0 auto;
   padding: 100px 100px 540px 100px;
   overflow: hidden;
+
+  @media (max-width: $mobile) {
+  	padding: 100px 20px 540px;
+  }
 }
 
 .buy__title {
 	margin-bottom: 16px;
+
+	@media (max-width: $laptop) {
+	font-size: 62px;
+	}
 }
 
 .buy__desc {

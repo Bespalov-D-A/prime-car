@@ -12,7 +12,7 @@
     content: '';
     position: absolute;
     top: 152px;
-    left: 0;
+    left: 34px;
     width: 259px;
     height: 417px;
     background-image: url('./../img/decor/star-green.svg');
@@ -20,7 +20,12 @@
     background-position: center center;
 
     @media (max-width: $laptop) {
-    top: 10px;
+      top: 10px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 20px;
+      left: -53px;
     }
   }
 
@@ -35,10 +40,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 300;
-    
+
     @media (max-width: $laptop) {
-    right: -67px;
-    bottom: -153px;
+      right: -67px;
+      bottom: -153px;
+    }
+    @media (max-width: $mobile) {
+      right: -217px;
     }
   }
 

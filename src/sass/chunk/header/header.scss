@@ -9,4 +9,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+
+  @media (max-width: $tablet) {
+  	background-position: -347px;
+  }
+
+  @media (max-width: $mobile) {
+  	padding: 232px 38px;
+  }
 }

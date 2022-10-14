@@ -5,14 +5,13 @@
   padding-left: 26px;
 
   @media (max-width: $laptop) {
-  	flex-flow: column wrap;
-	  position: fixed;
-	  left: -100%;
-	  top: 0;
-	  width: 100%;
-	  height: 100%;
-	  background: rgb(0 0 0 / 50%);
-
+    flex-flow: column wrap;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 50%);
   }
 }
 
@@ -22,6 +21,20 @@
   &:last-child {
     margin-right: 0;
   }
+
+  .menu-nav__item--btn {
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+}
+
+.menu-nav__item--btn {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 .menu__btn {
@@ -29,4 +42,8 @@
   padding: 8px 32px;
   letter-spacing: 0.3px;
   @include btn-trans;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }

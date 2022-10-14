@@ -2,6 +2,8 @@
   display: flex;
 
   padding-top: 60px;
+  position: relative;
+  z-index: 200;
 
   @media (max-width: $desktop-large) {
     flex-flow: column-reverse wrap;
