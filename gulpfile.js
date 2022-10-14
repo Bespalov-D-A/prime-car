@@ -2,7 +2,7 @@ const { watch, series, parallel } = require('gulp')
 const browserSync = require('browser-sync').create()
 
 // Configuration
-const enableServer = false
+const enableServer = true
 const path = require('./config/path.js')
 const settings = require('./config/settings.js')
 

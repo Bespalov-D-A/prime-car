@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -10,6 +10,13 @@
   margin: 0 auto;
   padding: 0 100px;
   z-index: 500;
+  background: rgb(0 0 0 / 0%);
+  transition: all 1s;
+  &.menu--scroll {
+    transition: all 1s;
+    background: rgb(0 0 0 / 50%);
+  }
+
   @media (max-width: $desktop) {
     padding: 0 44px;
   }

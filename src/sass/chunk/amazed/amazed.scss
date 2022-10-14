@@ -21,6 +21,7 @@
 
     @media (max-width: $laptop) {
       top: 10px;
+      left: -24px;
     }
 
     @media (max-width: $mobile) {
@@ -42,8 +43,8 @@
     z-index: 300;
 
     @media (max-width: $laptop) {
-      right: -67px;
-      bottom: -153px;
+      right: -123px;
+      bottom: -224px;
     }
     @media (max-width: $mobile) {
       right: -217px;
