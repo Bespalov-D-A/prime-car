@@ -11,4 +11,8 @@
   @media (max-width: $desktop) {
     width: 100%;
   }
+
+  @media (max-width: $laptop) {
+    padding-bottom: 40px;
+  }
 }

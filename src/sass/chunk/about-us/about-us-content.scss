@@ -17,6 +17,10 @@
   @media (max-width: $desktop-large) {
     max-width: 850px;
   }
+
+  @media (max-width: $laptop) {
+    padding: 40px 0 0 0;
+  }
 }
 
 .about-us-content__img {
@@ -25,4 +29,7 @@
 }
 
 .about-us-content__img--image {
+  @media (max-width: $laptop) {
+    width: 100%;
+  }
 }

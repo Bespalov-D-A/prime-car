@@ -9,6 +9,15 @@
   max-width: $page;
   margin: 0 auto;
   padding: 0 100px;
+
+  @media (max-width: $desktop) {
+  padding: 0 44px;
+  }
+
+  @media (max-width: $laptop) {
+  position: fixed;
+  padding: 0 112px 0 44px;
+  }
 }
 
 .menu__title {

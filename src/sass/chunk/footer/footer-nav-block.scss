@@ -1,3 +1,11 @@
+.footer-nav-block {
+  @media (max-width: $laptop) {
+    width: 100%;
+    flex-flow: row wrap;
+    padding-bottom: 60px;
+  }
+}
+
 .footer-nav-block--contact {
   .footer-nav-block__item {
     &:first-child {
@@ -14,11 +22,24 @@
     text-transform: capitalize;
     letter-spacing: -0.7px;
   }
+
+  @media (max-width: $laptop) {
+    display: inline;
+    margin-right: 16px;
+
+    &:first-child {
+      display: block;
+    }
+  }
 }
 
 .footer-nav-block__item--flex {
   display: flex;
   max-width: 126px;
+
+  @media (max-width: $laptop) {
+  display: flex;
+  }
 }
 
 .footer-nav-block__item--link {

@@ -18,6 +18,10 @@
     background-image: url('./../img/decor/star-green.svg');
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (max-width: $laptop) {
+    top: 10px;
+    }
   }
 
   &:after {
@@ -31,6 +35,15 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 300;
+    
+    @media (max-width: $laptop) {
+    right: -67px;
+    bottom: -153px;
+    }
+  }
+
+  @media (max-width: $laptop) {
+    padding: 40px;
   }
 }
 
@@ -44,6 +57,22 @@
   align-items: stretch;
   position: relative;
   z-index: 200;
+
+  @media (max-width: $desktop) {
+    flex-flow: column wrap;
+  }
+}
+
+.amazed__info--title {
+  @media (max-width: $laptop) {
+    font-size: 64px;
+  }
+}
+
+.amazed__info--br {
+  @media (max-width: $laptop) {
+    display: none;
+  }
 }
 
 .amazed__info--desc {
@@ -52,10 +81,16 @@
   font-size: 32px;
   line-height: 38px;
 
-  @media (max-width: $desktop) {
+  @media (max-width: $desktop-large) {
     max-width: 355px;
     font-size: 28px;
     text-align: right;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+    padding-top: 0;
+    text-align: left;
   }
 }
 
