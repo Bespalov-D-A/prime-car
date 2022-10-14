@@ -51,6 +51,12 @@
   padding-top: 56px;
   font-size: 32px;
   line-height: 38px;
+
+  @media (max-width: $desktop) {
+    max-width: 355px;
+    font-size: 28px;
+    text-align: right;
+  }
 }
 
 .amazed__video {
@@ -68,11 +74,11 @@
 }
 
 .amazed__video--btn {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-image: url('./../img/icons/play.svg');
   background-repeat: no-repeat;
   background-position: center center;

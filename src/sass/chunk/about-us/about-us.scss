@@ -8,6 +8,14 @@
   margin: 0 auto;
   padding: 60px 100px;
 
+  @media (max-width: $desktop-1600) {
+    padding: 60px 40px;
+  }
+
+  @media (max-width: $desktop-large) {
+    padding: 60px 100px;
+  }
+
   &:after {
     content: 'about us';
     position: absolute;

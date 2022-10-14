@@ -48,4 +48,9 @@
   width: 100%;
 
   padding: 162px 0 114px 0;
+
+  @media (max-width: $desktop) {
+  	flex-flow: column wrap;
+	padding: 162px 20px 114px;
+  }
 }

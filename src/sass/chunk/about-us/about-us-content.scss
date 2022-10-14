@@ -2,15 +2,25 @@
   display: flex;
 
   padding-top: 60px;
+
+  @media (max-width: $desktop-large) {
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
 }
 
 .about-us-content__desc {
   padding: 48.5px 100px 0 0;
 
   line-height: 29px;
+
+  @media (max-width: $desktop-large) {
+    max-width: 850px;
+  }
 }
 
 .about-us-content__img {
+  text-align: center;
   z-index: 200;
 }
 

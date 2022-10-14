@@ -5,20 +5,32 @@
   position: relative;
   padding: 116px 100px;
   z-index: 200;
+
+  @media (max-width: $desktop-large) {
+    flex-flow: column wrap;
+    align-items: center;
+  }
 }
 
 .contact-int__info {
   max-width: 660px;
+
+  @media (max-width: $desktop-large) {
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
 }
 
 .contact-int__info--title {
-    padding-top: 78px;
-    line-height: 76px;
+  padding-top: 78px;
+  line-height: 76px;
 }
 
 .contact-int__info--desc {
-font-size: 30.08px;
-line-height: 50px;
+  font-size: 30.08px;
+  line-height: 50px;
+
+  @media (max-width: $desktop-large) {
+    font-size: 21px;
+  }
 }
-
-

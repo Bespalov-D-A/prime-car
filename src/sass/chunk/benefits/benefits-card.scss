@@ -10,6 +10,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: $desktop) {
+  max-width: 100%;
+  margin-bottom: 112px;
+  }
 }
 
 .benefits-card__title {

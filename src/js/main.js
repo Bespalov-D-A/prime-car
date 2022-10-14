@@ -1,5 +1,6 @@
 import AOS from 'aos'
-const test = require('./modules/video.js')
+const video = require('./modules/video.js')
+const Flickity = require('./flickity.pkd.min.js')
 
 AOS.init({
   once: true,
@@ -33,7 +34,7 @@ var flktyTwo = new Flickity(elemTwo, {
 //flkty.reposition()
 
 const ready = () => {
-  test()
+  video()
 }
 
 document.addEventListener('DOMContentLoaded', ready)

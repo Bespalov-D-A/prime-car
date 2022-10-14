@@ -1,6 +1,6 @@
 @import './mixins/index.scss';
 @import './base/index.scss';
-@import './library/flikity.css';
+@import './library/flikity.scss';
 @import './library/aos.scss';
 
 @include font-face(
@@ -33,6 +33,7 @@ body {
   line-height: 1;
   color: $white;
   background: $dark-2;
+
 }
 
 button {
