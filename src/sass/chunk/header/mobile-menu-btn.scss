@@ -6,9 +6,11 @@
   height: 80px;
   border: 0;
   background: none;
-  background-image: url('./../img/icons/menu.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px;
+  background: url('./../img/icons/menu.svg') no-repeat
+    center center / 40px;
 
+  &.mobile-menu-btn--open {
+    background: url('./../img/icons/close.svg') no-repeat
+      center center / 40px;
+  }
 }

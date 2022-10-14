@@ -1,5 +1,6 @@
 import AOS from 'aos'
 const video = require('./modules/video.js')
+const mobile = require('./modules/mobile-menu.js')
 const Flickity = require('./flickity.pkd.min.js')
 
 AOS.init({
@@ -28,12 +29,9 @@ var flktyTwo = new Flickity(elemTwo, {
   freeScroll: true,
 })
 
-//flktyTwo.next();
-//flktyTwo.select( 2 );
-//flkty.resize()
-//flkty.reposition()
 
 const ready = () => {
+  mobile()
   video()
 }
 

@@ -3,7 +3,8 @@
   align-items: center;
   letter-spacing: 0.7px;
   padding-left: 26px;
-
+transition: all 0.2s ease-out;
+  
   @media (max-width: $laptop) {
     flex-flow: column wrap;
     position: fixed;
@@ -13,6 +14,16 @@
     height: 100%;
     background: rgb(0 0 0 / 50%);
   }
+
+  @media (max-width: $mobile) {
+    justify-content: center;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+  }
+
+  &.menu-nav-open {
+    left: 0;
+  }
 }
 
 .menu-nav__item {
@@ -21,10 +32,18 @@
   &:last-child {
     margin-right: 0;
   }
-
-  .menu-nav__item--btn {
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+  &.menu-nav__item--btn {
+	  display: none;
     @media (max-width: $mobile) {
       display: block;
+
+      .menu__btn {
+      display: block;
+      margin-right: 40px;
+      }
     }
   }
 }
