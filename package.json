@@ -22,6 +22,7 @@
     "gulp-cssimport": "^7.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
@@ -37,14 +38,15 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-webp-css": "^1.1.0",
     "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
     "sass": "^1.54.9",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "gift": "^0.10.2",
     "jquery": "^3.6.1"
   }
 }

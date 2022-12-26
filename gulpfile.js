@@ -1,4 +1,5 @@
-const { watch, series, parallel } = require('gulp')
+const { task, src, watch, series, parallel } = require('gulp')
+const ghPages = require('gulp-gh-pages');
 const browserSync = require('browser-sync').create()
 
 // Configuration
@@ -17,7 +18,7 @@ const video = require('./tasks/video.js')
 
 // Server
 const server = () => {
-if(!enableServer) return
+  if (!enableServer) return
   browserSync.init({
     server: {
       baseDir: path.root,
@@ -32,7 +33,10 @@ const watcher = () => {
   watch(path.js.watch, js).on('all', browserSync.reload)
   watch(path.img.watch, img).on('all', browserSync.reload)
   watch(path.font.watch, font).on('all', browserSync.reload)
-  watch(path.video.watch, video).on('all', browserSync.reload)
+  watch(path.video.watch, video).on(
+    'all',
+    browserSync.reload
+  )
 }
 exports.html = html
 exports.scss = scss
@@ -46,6 +50,13 @@ const build = series(
   parallel(html, scss, js, img, video, font)
 )
 const dev = series(build, parallel(watcher, server))
+
+task(
+  'deploy',
+  series(clear, build, () =>
+    src('./public/**/*').pipe(ghPages())
+  )
+)
 
 // Build
 exports.default = settings.isProduction ? build : dev
